@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopky a Časovač</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stopky</h1>
+    <div id="stopky">
+        <span id="stopky-display">00:00:00</span>
+        <br>
+        <button onclick="startStopky()">Start</button>
+        <button onclick="stopStopky()">Stop</button>
+        <button onclick="resetStopky()">Reset</button>
+    </div>
+
+    <h1>Časovač</h1>
+    <div id="casovac">
+        <input type="number" id="cas-hodiny" placeholder="Hodiny">
+        <input type="number" id="cas-minuty" placeholder="Minuty">
+        <input type="number" id="cas-sekundy" placeholder="Sekundy">
+        <br>
+        <button onclick="startCasovac()">Start</button>
+        <button onclick="stopCasovac()">Stop</button>
+        <button onclick="resetCasovac()">Reset</button>
+        <div id="casovac-display">00:00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
